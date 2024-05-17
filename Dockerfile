@@ -1,8 +1,8 @@
-FROM openjdk:11-jdk-alpine
+FROM amazoncorretto:11
 
 WORKDIR /app
 
-COPY target/*.jar /app/app.jar
+COPY app.jar /app/app.jar
 
 EXPOSE 8080
 
